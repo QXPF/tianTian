@@ -98,6 +98,10 @@ html{
   html {
     font-size: 8px;
   }
+  .container,
+  .container-sm {
+    padding: 0;
+  }
 }
 /* 头部 */
 .header,
@@ -228,7 +232,7 @@ html{
     top: 15px;
   }
   .header .hd-fr{
-    margin-right: 50px;
+    margin-right: 45px;
   }
 
 }
