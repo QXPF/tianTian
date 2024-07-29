@@ -604,9 +604,6 @@ html {
     width: 80px;
   }
 }
-.policy {
-  background: rgba(0, 85, 230, 0.18);
-}
 .policy-fl-w {
   width: 280px;
 }
@@ -733,8 +730,9 @@ html {
   h5 1.25 17.5 
   h6 1    14
 */
-.compliance-c-item:hover {
-  color: rgba(38, 129, 255, 1);
+.compliance-c-item:hover h3 {
+  color: rgba(38, 129, 255, 1) !important;
+
 }
 .compliance-c-item:hover p {
   color: rgba(38, 129, 255, 1) !important;
@@ -775,12 +773,30 @@ html {
   background: rgba(38, 129, 255, 1);
   color: #fff;
 }
+.complianceList-item .complianceList-item-cont:hover h3{
+  color: rgba(38, 129, 255, 1) !important;
+}
+.complianceList-item .complianceList-item-cont:hover p{
+  color: rgba(38, 129, 255, 1) !important;
+}
 @media screen and (max-width: 768px) {
-  .complianceList .complianceList-item-wrap {
-    flex-wrap: wrap;
+  .complianceList-item{
+    border-top: 0 !important ;
+    border-left: 0 !important ;
+    border-right: 0 !important ;
   }
   .complianceList-item-img {
+    width: 100px;
+  }
+  .complianceList-item .complianceList-item-cont{
     width: 100%;
+    overflow: hidden;
+  }
+  .complianceList .complianceList-item-wrap h3{
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 }
 .complianceDetails-cont {
