@@ -75,6 +75,24 @@ li {
 html {
   font-size: 14px;
 }
+.text-blue {
+  color: rgba(29, 81, 210, 1) !important;
+}
+.btn-black {
+}
+/* 行高 */
+.line-height-15 {
+  line-height: 1.5;
+}
+.line-height-1 {
+  line-height: 1;
+}
+.line-height-2 {
+  line-height: 2;
+}
+.text-indent-2 {
+  text-indent: 2em;
+}
 @media screen and (max-width: 992px) {
   body,
   html {
@@ -180,13 +198,13 @@ html {
   .hd-fr {
     font-size: 12px;
   }
-  .hd-nav ul{
+  .hd-nav ul {
     padding-left: 12px;
   }
-  .hd-nav .hd-nav-li.active{
-    background: #0F64FB;
+  .hd-nav .hd-nav-li.active {
+    background: #0f64fb;
   }
-  .hd-nav .hd-nav-li.active a{
+  .hd-nav .hd-nav-li.active a {
     color: #fff;
   }
   .icon_call {
@@ -294,7 +312,7 @@ html {
   background: #f0f0f0;
 }
 .sense .sense-text {
-  max-width: 170px;
+  max-width: 180px;
   color: #000003;
   line-height: 2;
 }
@@ -498,7 +516,7 @@ html {
 .commodity .commodity-pic:hover {
   transform: scale(1.1);
 }
-.commodity-warp{
+.commodity-warp {
   width: 75%;
 }
 @media screen and (max-width: 1600px) {
@@ -506,11 +524,11 @@ html {
 @media screen and (max-width: 1440px) {
 }
 @media screen and (max-width: 982px) {
-  .commodity-warp{
+  .commodity-warp {
     width: 100%;
     padding-left: 40px;
   }
-  .commodity-icon{
+  .commodity-icon {
     width: 22px;
   }
 }
@@ -528,9 +546,383 @@ html {
 }
 @media screen and (max-width: 982px) {
   .banner .banner-tel input {
-    height:32px;
+    height: 32px;
   }
   .banner .banner-tel .btn {
-    height:32px;
+    height: 32px;
+  }
+}
+/* 产品介绍 */
+.productHighlightsPic {
+  width: 290px;
+}
+.AnicertLogo {
+  width: 110px;
+}
+.tiantianLogo {
+  width: 100px;
+}
+.brief-box .brief-fl .brief-fl-fl {
+  border-bottom: 1px dashed rgba(210, 210, 210, 1);
+}
+.brief-box .brief-fl .brief-fl-b-fl {
+  border-right: 1px dashed rgba(210, 210, 210, 1);
+}
+@media screen and (max-width: 1440px) {
+  .productHighlightsPic {
+    width: 240px;
+  }
+  .AnicertLogo {
+    width: 90px;
+  }
+  .tiantianLogo {
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .brief-box {
+    flex-wrap: wrap;
+  }
+  .brief-box .brief-fl {
+    width: 100%;
+  }
+  .brief-box .brief-fl .brief-fl-fl {
+    border-bottom: 1px solid rgba(210, 210, 210, 1);
+  }
+  .brief-box .brief-fl .brief-fl-b-fl {
+    border-right: none !important;
+    border-bottom: 1px solid rgba(210, 210, 210, 1);
+  }
+  .productHighlightsPic {
+    width: 240px;
+  }
+  .AnicertLogo {
+    width: 80px;
+  }
+  .tiantianLogo {
+    width: 80px;
+  }
+}
+.policy {
+  background: rgba(0, 85, 230, 0.18);
+}
+.policy-fl-w {
+  width: 280px;
+}
+.policy-hg {
+  padding-left: 15%;
+}
+@media screen and (max-width: 1440px) {
+  .policy-fl-w {
+    width: 240px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .policy-hg {
+    padding-left: 7%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .policy {
+    background: #fff;
+  }
+  .policy-item {
+    flex-wrap: wrap;
+  }
+  .policy-text {
+    border: 1px solid rgba(210, 210, 210, 1);
+  }
+  .policy-fl-w {
+    width: 100%;
+    background: rgba(209, 224, 250, 1) !important;
+  }
+  .policy-fl-w img {
+    width: 28px;
+  }
+  .policy-fl-w > div {
+    justify-content: flex-start !important;
+  }
+  .policy-hg {
+    padding: 0 12px;
+  }
+  .policy-hg img {
+    width: 20px;
+  }
+  .policy-text h3 {
+    text-align: left !important;
+  }
+}
+.empower-step-item {
+  width: 120px;
+  padding: 0 5px;
+}
+.empower-step-item-line {
+  width: 90px;
+  height: 95px;
+  display: flex;
+  align-items: center;
+  background: url(../images/arrow_icon_fr.png) no-repeat center;
+}
+.empower-step-item-line .empower-step-item-line-l {
+  width: 100%;
+  height: 1px;
+  background: rgba(38, 129, 255, 1);
+}
+@media screen and (max-width: 1440px) {
+  .empower-step-item-line {
+    background-size: 20px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .empower-step-item-line {
+    background-size: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .empower-step-list {
+    flex-wrap: wrap;
+  }
+  .empower-step-item-line4 {
+    display: none;
+  }
+  /* .empower-step-list ..empower-step-list */
+  .empower-step-item-img {
+    margin: 0 auto;
+    width: 36px;
+  }
+  .process_QR {
+    width: 160px;
+  }
+}
+.bg-blue-18 {
+  background: rgba(0, 85, 230, 0.18) !important;
+}
+.bg-white-65 {
+  background: rgba(255, 255, 255, 0.65) !important;
+}
+
+/* .case_intr_icon{
+  width:60px;
+} */
+@media (min-width: 768px) {
+  .w-md-50 {
+    width: 50% !important;
+  }
+}
+.btn-bg-primary {
+  background: rgba(29, 32, 136, 1) !important;
+}
+.compliance-fl {
+  width: 460px;
+}
+.compliance-line {
+  width: 200px;
+}
+.compliance-line span {
+  display: block;
+  width: 1px;
+  height: 100%;
+  margin: 0 auto;
+}
+/*h1 2.5  35 
+  h2 2    28 
+  h3 1.75 24.5 
+  h4 1.5  21 
+  h5 1.25 17.5 
+  h6 1    14
+*/
+.compliance-c-item:hover {
+  color: rgba(38, 129, 255, 1);
+}
+.compliance-c-item:hover p {
+  color: rgba(38, 129, 255, 1) !important;
+}
+@media screen and (max-width: 1440px) {
+  .compliance-line {
+    width: 140px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .compliance-box {
+    flex-wrap: wrap;
+  }
+  .compliance-line {
+    width: 80px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .compliance-fl {
+    width: 100%;
+  }
+  .compliance-line {
+    width: 80px;
+  }
+  .compliance_icon {
+    width: 40px;
+  }
+}
+.pagination .page-item .page-link {
+  background: rgba(191, 191, 191, 1);
+  color: rgba(0, 0, 0, 1);
+}
+.pagination .page-item.active .page-link {
+  background: rgba(38, 129, 255, 1);
+  color: #fff;
+}
+.pagination .page-item .page-link:hover {
+  background: rgba(38, 129, 255, 1);
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .complianceList .complianceList-item-wrap {
+    flex-wrap: wrap;
+  }
+  .complianceList-item-img {
+    width: 100%;
+  }
+}
+.complianceDetails-cont {
+  padding-right: 12%;
+}
+.recommend {
+  padding-left: 6%;
+}
+.recommend .recommend-wrap {
+  width: 440px;
+  min-height: 580px;
+}
+.text-16 {
+  font-size: 1.125rem;
+}
+.recommend .recommend-wrap .recommend-item:hover a {
+  color: rgba(38, 129, 255, 1) !important;
+}
+
+@media screen and (max-width: 1440px) {
+  .recommend .recommend-wrap {
+    width: 340px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .recommend .recommend-wrap {
+    width: 240px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .complianceDetails {
+    flex-wrap: wrap;
+  }
+  .complianceDetails-cont {
+    padding: 0;
+    width: 100%;
+  }
+  .recommend,
+  .recommend .recommend-wrap {
+    width: 100%;
+    padding: 0;
+    border: none;
+    min-height: 0;
+    border: none !important;
+  }
+}
+/* 关于我们 */
+.company-cont {
+  width: 830px;
+}
+@media screen and (max-width: 768px) {
+  .company-wrap {
+    flex-wrap: wrap;
+  }
+  .company-cont {
+    width: 100%;
+  }
+}
+/* 申请试用 */
+.pop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+.pop .pop-wrap {
+  position: absolute;
+  width: 800px;
+  min-height: 540px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url(../images/form_bg.png) no-repeat;
+  background-size:100% 100%;
+  padding: 0 40px;
+}
+.trial-form .trial-item{
+  position: relative;
+  display: flex;
+}
+.trial-form .trial-item .trial-item-icon{
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 56px;
+  height: 56px;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+}
+.trial-form .trial-item{
+  max-width: 500px;
+  margin: 0 auto;
+}
+.trial-form .trial-item .form-control{
+  height: 56px;
+  padding-left: 56px;
+  font-size: 1.25rem;
+}
+.trial-btn{
+  border: none !important;
+  background: linear-gradient(to bottom, rgba(1, 94, 234, 1), rgba(0, 192, 250, 1));
+}
+.pop .btn{
+  height: 56px;
+  font-size: 1.25rem;
+}
+.w-btn{
+  width: 195px;
+}
+@media screen and (max-width: 768px) {
+  .pop .pop-wrap {
+    width: 95%;
+    min-height: 360px;
+  }
+  .trial-form .trial-item{
+    width: 100%;
+  }
+  .trial-form .trial-item .form-control{
+    height: 36px;
+    padding-left: 36px;
+  }
+  .trial-form .trial-item .trial-item-icon{
+    width: 36px;
+    height: 36px;
+  }
+  .trial-form .trial-item .trial-item-icon img{
+    width: 16px;
+  }
+  .save_icon,.error_icon{
+     width: 100px;
+  }
+  .pop .btn{
+    height: 36px;
+  }
+  .w-btn{
+    width: 130px;
   }
 }
