@@ -417,8 +417,13 @@ html {
   max-width: 1060px;
   margin: 0 auto;
 }
-
+.scene .scene-item{
+  /* width: 20%; */
+  align-items: c;
+  justify-content: center;
+}
 .scene .scene-item .scene-item-box {
+  width: auto;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -1005,4 +1010,16 @@ html {
   .font-16 {
     font-size: 12px !important;
   }
+}
+.line-show-3 {
+  display: -webkit-box; /* 使用旧版WebKit语法 */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3; /* 限制显示的行数 */
+  /* 支持新版标准的浏览器，可以使用以下属性 */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
