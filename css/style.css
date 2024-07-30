@@ -181,7 +181,7 @@ html {
     height: 60px;
   }
   .logo {
-    max-width: 100px;
+    max-width: 80px;
   }
   .hd-nav ul {
     padding-left: 12px;
@@ -517,6 +517,12 @@ html {
     width: 22px;
   } */
 }
+@media screen and (max-width: 768px) {
+  .commodity-icon {
+    width: 28px;
+  }
+  
+}
 .banner .banner-tel {
   max-width: 450px;
   background: rgba(168, 234, 250, 0.36);
@@ -589,7 +595,7 @@ html {
     width: 80px;
   }
 }
-.policy{
+.policy {
   background: rgba(0, 85, 230, 0.18);
 }
 .policy-fl-w {
@@ -702,7 +708,7 @@ html {
 .compliance-fl {
   width: 460px;
 }
-.compliance-cont{
+.compliance-cont {
   width: 900px;
 }
 .compliance-line {
@@ -718,7 +724,6 @@ html {
 
 .compliance-c-item:hover h3 {
   color: rgba(38, 129, 255, 1) !important;
-
 }
 .compliance-c-item:hover p {
   color: rgba(38, 129, 255, 1) !important;
@@ -760,14 +765,14 @@ html {
   background: rgba(38, 129, 255, 1);
   color: #fff;
 }
-.complianceList-item .complianceList-item-cont:hover h3{
+.complianceList-item .complianceList-item-cont:hover h3 {
   color: rgba(38, 129, 255, 1) !important;
 }
-.complianceList-item .complianceList-item-cont:hover p{
+.complianceList-item .complianceList-item-cont:hover p {
   color: rgba(38, 129, 255, 1) !important;
 }
 @media screen and (max-width: 768px) {
-  .complianceList-item{
+  .complianceList-item {
     border-top: 0 !important ;
     border-left: 0 !important ;
     border-right: 0 !important ;
@@ -775,11 +780,11 @@ html {
   .complianceList-item-img {
     width: 100px;
   }
-  .complianceList-item .complianceList-item-cont{
+  .complianceList-item .complianceList-item-cont {
     width: 100%;
     overflow: hidden;
   }
-  .complianceList .complianceList-item-wrap h3{
+  .complianceList .complianceList-item-wrap h3 {
     width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -862,14 +867,14 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
   background: url(../images/form_bg.png) no-repeat;
-  background-size:100% 100%;
+  background-size: 100% 100%;
   padding: 0 40px;
 }
-.trial-form .trial-item{
+.trial-form .trial-item {
   position: relative;
   display: flex;
 }
-.trial-form .trial-item .trial-item-icon{
+.trial-form .trial-item .trial-item-icon {
   display: flex;
   position: absolute;
   top: 0;
@@ -880,24 +885,28 @@ html {
   align-items: center;
   z-index: 99;
 }
-.trial-form .trial-item{
+.trial-form .trial-item {
   max-width: 500px;
   margin: 0 auto;
 }
-.trial-form .trial-item .form-control{
+.trial-form .trial-item .form-control {
   height: 56px;
   padding-left: 56px;
   font-size: 1.25rem;
 }
-.trial-btn{
+.trial-btn {
   border: none !important;
-  background: linear-gradient(to bottom, rgba(1, 94, 234, 1), rgba(0, 192, 250, 1));
+  background: linear-gradient(
+    to bottom,
+    rgba(1, 94, 234, 1),
+    rgba(0, 192, 250, 1)
+  );
 }
-.pop .btn{
+.pop .btn {
   height: 56px;
   font-size: 1.25rem;
 }
-.w-btn{
+.w-btn {
   width: 195px;
 }
 @media screen and (max-width: 768px) {
@@ -905,27 +914,28 @@ html {
     width: 95%;
     min-height: 360px;
   }
-  .trial-form .trial-item{
+  .trial-form .trial-item {
     width: 100%;
   }
-  .trial-form .trial-item .form-control{
+  .trial-form .trial-item .form-control {
     height: 36px;
     padding-left: 36px;
   }
-  .trial-form .trial-item .trial-item-icon{
+  .trial-form .trial-item .trial-item-icon {
     width: 36px;
     height: 36px;
   }
-  .trial-form .trial-item .trial-item-icon img{
+  .trial-form .trial-item .trial-item-icon img {
     width: 16px;
   }
-  .save_icon,.error_icon{
-     width: 100px;
+  .save_icon,
+  .error_icon {
+    width: 100px;
   }
-  .pop .btn{
+  .pop .btn {
     height: 36px;
   }
-  .w-btn{
+  .w-btn {
     width: 130px;
   }
 }
@@ -936,30 +946,60 @@ html {
   h5 1.25 17.5 
   h6 1    14
 */
-.font-40{
+.font-40 {
   font-size: 2.85rem !important;
 }
-.font-36{
+.font-36 {
   font-size: 2.6rem !important;
 }
-.font-32{
+.font-32 {
   font-size: 2.3rem !important;
 }
-.font-30{
+.font-30 {
   font-size: 2.15rem !important;
 }
-.font-28{
+.font-28 {
   font-size: 2rem !important;
 }
-.font-24{
+.font-24 {
   font-size: 1.7rem !important;
 }
-.font-20{
+.font-20 {
   font-size: 1.4rem !important;
 }
-.font-18{
+.font-18 {
   font-size: 1.25rem !important;
 }
-.font-16{
+.font-16 {
   font-size: 1.15rem !important;
+}
+@media screen and (max-width: 768px) {
+  .font-40 {
+    font-size:26px 
+    !important;
+  }
+  .font-36 {
+    font-size: 20px !important;
+  }
+  .font-32 {
+    font-size: 19px !important;
+  }
+  .font-30 {
+    font-size: 18px !important;
+  }
+  .font-28 {
+    font-size: 16px !important;
+  }
+  .font-24 {
+    font-size: 15px !important;
+  }
+  .font-20 {
+    font-size: 14px !important;
+  }
+  .font-18 {
+    font-size: 13px !important;
+  }
+  .font-16 {
+    font-size: 12px !important;
+  }
 }
