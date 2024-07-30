@@ -942,3 +942,6 @@ html {
     width: 130px;
   }
 }
+p,a{
+  font-size: 1.125rem;
+}
