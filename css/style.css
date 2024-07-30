@@ -123,10 +123,10 @@ html {
   height: 150px;
 }
 .hd-fl .hd-fl-tit {
-  font-size: 20px;
+  font-size: 1.45rem;
 }
 .hd-nav .hd-nav-li a {
-  font-size: 20px;
+  font-size: 1.45rem;
   color: #040404;
 }
 .hd-nav .hd-nav-li a:hover {
@@ -139,7 +139,7 @@ html {
 }
 .hd-fr {
   color: #040404;
-  font-size: 20px;
+  font-size: 1.45rem;
 }
 .header .hd-MobileMenu {
   display: none;
@@ -153,11 +153,6 @@ html {
   }
   .logo {
     max-width: 160px;
-  }
-  .hd-fl .hd-fl-tit,
-  .hd-nav .hd-nav-li a,
-  .hd-fr {
-    font-size: 16px;
   }
   .icon_call {
     max-width: 30px;
@@ -173,11 +168,6 @@ html {
   .logo {
     max-width: 160px;
   }
-  .hd-fl .hd-fl-tit,
-  .hd-nav .hd-nav-li a,
-  .hd-fr {
-    font-size: 14px;
-  }
 
   .icon_call {
     max-width: 24px;
@@ -192,11 +182,6 @@ html {
   }
   .logo {
     max-width: 100px;
-  }
-  .hd-fl .hd-fl-tit,
-  .hd-nav .hd-nav-li a,
-  .hd-fr {
-    font-size: 12px;
   }
   .hd-nav ul {
     padding-left: 12px;
@@ -528,9 +513,9 @@ html {
     width: 100%;
     padding-left: 40px;
   }
-  .commodity-icon {
+  /* .commodity-icon {
     width: 22px;
-  }
+  } */
 }
 .banner .banner-tel {
   max-width: 450px;
@@ -603,6 +588,9 @@ html {
   .tiantianLogo {
     width: 80px;
   }
+}
+.policy{
+  background: rgba(0, 85, 230, 0.18);
 }
 .policy-fl-w {
   width: 280px;
@@ -714,8 +702,12 @@ html {
 .compliance-fl {
   width: 460px;
 }
+.compliance-cont{
+  width: 900px;
+}
 .compliance-line {
   width: 200px;
+  padding: 50px 0;
 }
 .compliance-line span {
   display: block;
@@ -723,13 +715,7 @@ html {
   height: 100%;
   margin: 0 auto;
 }
-/*h1 2.5  35 
-  h2 2    28 
-  h3 1.75 24.5 
-  h4 1.5  21 
-  h5 1.25 17.5 
-  h6 1    14
-*/
+
 .compliance-c-item:hover h3 {
   color: rgba(38, 129, 255, 1) !important;
 
@@ -737,25 +723,26 @@ html {
 .compliance-c-item:hover p {
   color: rgba(38, 129, 255, 1) !important;
 }
-@media screen and (max-width: 1440px) {
-  .compliance-line {
-    width: 140px;
+/* @media screen and (min-width: 1440px) {
+  .compliance-fl {
+    flex-shrink: 0 !important;
   }
-}
-@media screen and (max-width: 1200px) {
+  
+} */
+/* @media screen and (max-width: 1200px) {
   .compliance-box {
     flex-wrap: wrap;
   }
-  .compliance-line {
-    width: 80px;
-  }
-}
+} */
 @media screen and (max-width: 768px) {
+  .compliance-box {
+    flex-wrap: wrap;
+  }
   .compliance-fl {
     width: 100%;
   }
   .compliance-line {
-    width: 80px;
+    display: none;
   }
   .compliance_icon {
     width: 40px;
@@ -942,6 +929,37 @@ html {
     width: 130px;
   }
 }
-p,a{
-  font-size: 1.125rem;
+/*h1 2.5  35 
+  h2 2    28 
+  h3 1.75 24.5 
+  h4 1.5  21 
+  h5 1.25 17.5 
+  h6 1    14
+*/
+.font-40{
+  font-size: 2.85rem !important;
+}
+.font-36{
+  font-size: 2.6rem !important;
+}
+.font-32{
+  font-size: 2.3rem !important;
+}
+.font-30{
+  font-size: 2.15rem !important;
+}
+.font-28{
+  font-size: 2rem !important;
+}
+.font-24{
+  font-size: 1.7rem !important;
+}
+.font-20{
+  font-size: 1.4rem !important;
+}
+.font-18{
+  font-size: 1.25rem !important;
+}
+.font-16{
+  font-size: 1.15rem !important;
 }
