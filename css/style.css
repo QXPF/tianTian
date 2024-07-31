@@ -120,9 +120,8 @@ html {
 .header .hd-fl,
 .header .hd-nav ul,
 .hd-fr {
-  height: 150px;
+  height: 116px;
 }
-.hd-fl .hd-fl-tit,
 .hd-nav .hd-nav-li a {
   font-size: 1.45rem;
   color: #040404;
@@ -141,6 +140,10 @@ html {
 }
 .header .hd-MobileMenu {
   display: none;
+}
+.header-slot {
+  width: 100%;
+  height: 50px;
 }
 @media screen and (max-width: 1440px) {
   .header,
@@ -163,10 +166,8 @@ html {
   .hd-fr {
     height: 80px;
   }
-  .hd-fl .hd-fl-tit,
   .hd-nav .hd-nav-li a {
     font-size: 16px;
-
   }
   .logo {
     max-width: 160px;
@@ -181,7 +182,7 @@ html {
   .header .hd-fl,
   .header .hd-nav ul,
   .hd-fr {
-    height: 60px;
+    height: 50px;
   }
   .logo {
     max-width: 80px;
@@ -198,21 +199,25 @@ html {
   .icon_call {
     max-width: 20px;
   }
-  .hd-fl .hd-fl-tit {
-    position: relative;
-    transform: scale(0.8);
-  }
 }
 @media screen and (max-width: 768px) {
   .header {
-    position: relative;
+    margin-bottom: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: 9999;
+  }
+  .hd-nav {
+    display: block
   }
   .container {
     padding: 0 10px;
   }
   .hd-nav {
     position: absolute;
-    top: 60px;
+    top: 50px;
     left: 0;
     width: 100%;
     display: none;
@@ -235,62 +240,24 @@ html {
     display: block;
     position: absolute;
     right: 10px;
-    top: 15px;
+    top: 12px;
   }
   .header .hd-fr {
-    margin-right: 45px;
+    margin-right: 30px;
   }
 }
 
 .hamburger {
   list-style: none; /* summary元素默认会有一个三角形箭头，可以使用这个行代码删除箭头 */
   cursor: pointer;
-  width: 30px;
+  width: 26px;
   height: 26px;
   position: relative;
+  background: url(../images/list_icon.png) no-repeat center;
+  background-size:100%; 
 }
-
-.hamburger::-webkit-details-marker {
-  display: none;
-}
-
-.hamburger-menu__line {
-  display: block;
-  width: 30px;
-  height: 4px;
-  background-color: #040404;
-  transition: 0.5s;
-  position: absolute;
-}
-
-.hamburger-menu__line:first-child {
-  top: 0;
-}
-
-.hamburger-menu__line:nth-child(2) {
-  top: calc(50% - 2px);
-}
-
-.hamburger-menu__line:last-child {
-  bottom: 0;
-}
-/* 隐藏中间那条直线 */
-.hamburger.hamburger-open .hamburger-menu__line:nth-child(2) {
-  display: none;
-}
-
-/* 将上面那条直线移到中间，并旋转-45deg */
-.hamburger.hamburger-open .hamburger-menu__line:first-child {
-  top: calc(50% - 2px);
-  transform: rotate(-45deg);
-  transform-origin: center;
-}
-
-/* 将下面那条直线也移到中间，并旋转45deg */
-.hamburger.hamburger-open .hamburger-menu__line:last-child {
-  top: calc(50% - 2px);
-  transform: rotate(45deg);
-  transform-origin: center;
+.hamburger.hamburger-open {
+  background: url(../images/cross.png) no-repeat center;
 }
 /* 背景颜色 */
 .bg-tint {
@@ -1083,6 +1050,9 @@ html {
   }
 }
 @media (min-width: 768px) {
+  .mb-md-6{
+     margin-bottom: 6rem;
+  }
   .border-md-end {
     border-right: var(--bs-border-width) var(--bs-border-style)
       var(--bs-border-color) !important;

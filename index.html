@@ -13,56 +13,56 @@
   <div class="container-fluid header" id="header">
     <div class="container">
       <div class="hdeader-box clearfix">
-        <div class="hd-fl d-flex align-items-center float-start me-4">
+        <div class="hd-fl d-flex align-items-center float-start me-5">
           <div class="logo me-3">
             <img src="./images/logo.png" alt="" class="img-fluid" />
           </div>
-          <div class="hd-fl-tit">
-            促合规<br />
-            降风险<br />
-            保发展
+          <div class="hd-fl-tit font-16 d-none d-md-block">
+            <p class="mb-0">促合规</p>
+            <p class="mb-0">降风险</p>
+            <p class="mb-0">保发展</p>
           </div>
         </div>
         <div class="hd-nav float-start" id="headerNav">
           <ul class="d-flex align-items-center">
-            <li class="hd-nav-li me-lg-4 me-md-4 me-xs-0 active">
+            <li class="hd-nav-li me-lg-5 me-md-4 me-xs-0 active">
               <a href="./index.html">首页</a>
             </li>
-            <li class="hd-nav-li me-lg-4 me-md-4">
+            <li class="hd-nav-li me-lg-5 me-md-4">
               <a href="./productIntroduction.html">产品介绍</a>
             </li>
-            <li class="hd-nav-li me-lg-4 me-md-4">
+            <li class="hd-nav-li me-lg-5 me-md-4">
               <a href="./solutions.html">解决方案</a>
             </li>
-            <li class="hd-nav-li me-lg-4 me-md-4">
+            <li class="hd-nav-li me-lg-5 me-md-4">
               <a href="./compliance.html">合规专栏</a>
             </li>
-            <li class="hd-nav-li me-lg-4 me-md-4">
+            <li class="hd-nav-li me-lg-5 me-md-4">
               <a href="./aboutUs.html">关于我们</a>
             </li>
-            <li class="hd-nav-li me-lg-4 me-md-4">
+            <li class="hd-nav-li me-lg-5 me-md-4">
               <a href="./partnershipApplication.html">合作申请</a>
             </li>
           </ul>
         </div>
         <div class="hd-fr float-end d-flex align-items-center">
           <div class="icon_call">
-            <img src="./images/icon_call.png" alt="" class="img-fluid" />
+            <a href="tel:400-127-7536"><img src="./images/icon_call.png" alt="" class="img-fluid" /></a>
           </div>
-          <span class="ms-2">400-127-7536</span>
+          <div class="ms-3 icon_call d-block d-md-none">
+             <img src="./images/Q_icon2.png" class="img-fluid"/>
+          </div>
+          <span class="ms-2 d-none d-md-block">400-127-7536</span>
         </div>
         <div class="hd-MobileMenu">
           <div class="hamburger" id="MobileHamburger">
-            <div class="hamburger-menu">
-              <span class="hamburger-menu__line"></span>
-              <span class="hamburger-menu__line"></span>
-              <span class="hamburger-menu__line"></span>
-            </div>
+            <!-- <img src="./images/list_icon.png" class="img-fluid" /> -->
           </div>
         </div>
       </div>
     </div>
   </div>
+  <div class="header-slot d-block d-md-none"></div>
   <div class="banner position-relative d-none d-md-block">
     <img src="./images/backgrond_pic.png" alt="" class="img-fluid" />
     <div class="banner-box position-absolute w-100 h-100 left-0 d-flex align-items-center" style="left: 0; top: 0">
@@ -104,7 +104,7 @@
       <div class="pt-xxl-5 pt-xl-4 pt-3 mb-auto text-center w-100">
         <div class="d-flex align-items-end justify-content-center mb-4">
           <img src="./images/app logo.png" width="24px" class="img-fluid me-2" />
-          <span class="h1 mb-0">观看</span>
+          <span class="h1 mb-0">弦盾</span>
         </div>
         <div>
           <h4 class="mb-4">促合规·降风险·保发展</h4>
@@ -266,7 +266,7 @@
         <p class="d-flex justify-content-center font-16">
           <span class="me-3">为行业赋能，推动行业合规健康发展，降低企业数据合规风险
           </span>
-          <a href="javascript:;" class="d-none d-md-block">详情>></a>
+          <!-- <a href="javascript:;" class="d-none d-md-block">详情>></a> -->
         </p>
       </div>
       <div class="scene mb-4">
@@ -314,7 +314,7 @@
         </div>
       </div>
       <div class="service mb-5">
-        <div class="d-none d-md-block">
+        <div class="d-none d-md-block" id="serviceWeb">
           <div class="d-flex justify-content-between">
             <div class="service-item p-2 border rounded">
               <div class="position-relative">
@@ -365,7 +365,7 @@
             </div>
           </div>
         </div>
-        <div class="d-block d-md-none">
+        <div class="d-block d-md-none" id="servicePhone">
           <div>
             <div class="service-item mb-2">
               <div class="position-relative">
