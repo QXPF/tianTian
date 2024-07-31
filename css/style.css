@@ -1064,3 +1064,6 @@ html {
       var(--bs-border-color) !important;
   }
 }
+.bg-deep{
+  background: rgba(134, 170, 248, 1)!important;
+}
