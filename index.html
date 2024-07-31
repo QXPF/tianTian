@@ -820,18 +820,18 @@
             </div>
             <input type="text" placeholder="请输入验证码" class="form-control me-2" />
             <div class="text-nowrap trial-item-code">
-              <button class="btn h-100 w-100 trial-btn text-white w-btn">获取验证码</button>
+              <button class="btn h-100 w-100 trial-btn text-white w-btn" id="btn-code">获取验证码</button>
             </div>
           </div>
           <div class="trial-item mb-4 h5">
-            <button class="btn trial-btn w-100 text-white">立即申请</button>
+            <button class="btn trial-btn w-100 text-white" id="btn-apply">立即申请</button>
           </div>
         </div>
       </div>
     </div>
   </div>
   <!-- 成功 -->
-  <div class="pop">
+  <div class="pop" id="popSuccess">
     <div class="pop-wrap d-flex align-items-center text-center">
       <div class="pop-close">
         <img src="./images/close_icon.png" class="img-fluid" alt="" />
@@ -850,7 +850,7 @@
     </div>
   </div>
   <!-- 失败 -->
-  <div class="pop">
+  <div class="pop" id="popError">
     <div class="pop-wrap d-flex align-items-center text-center">
       <div class="pop-close">
         <img src="./images/close_icon.png" class="img-fluid" alt="" />
@@ -878,6 +878,14 @@
       })
       $('.pop .pop-close').click(function () {
         $('.pop').hide();
+      })
+      $('#btn-apply').click(function () {
+        $('.pop').hide();
+        $('#popSuccess').show();
+      })
+      $('#btn-code').click(function () {
+        $('.pop').hide();
+        $('#popError').show();
       })
     });
   </script>
