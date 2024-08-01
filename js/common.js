@@ -139,12 +139,33 @@ $(function () {
     $(".pop").hide();
     $("#popSuccess").show();
   });
-  $("#btn-code").click(function () {
+  $("#btn-getcode").click(function () {
     $(".pop").hide();
     $("#popError").show();
   });
   $("#MbobileApply").click(function () {
     $(".pop").hide();
     $("#trialForm").show();
+  });
+  let countdown; // 倒计时计时器变量
+  $("#btn-countdown").click(function () {
+    let seconds = 60; // 这里可以根据需要设置倒计时的秒数
+    const countdownBtn = document.getElementById('btn-countdown');
+    // 禁用按钮防止重复点击
+    countdownBtn.disabled = true;
+    // 显示初始倒计时
+    countdownBtn.textContent = seconds;
+ 
+    // 开始倒计时
+    countdown = setInterval(() => {
+      seconds--;
+      if (seconds >= 0) {
+        countdownBtn.textContent = seconds;
+      } else {
+        clearInterval(countdown); // 清除计时器
+        countdownBtn.disabled = false; // 启用按钮
+        countdownBtn.textContent = "获取验证码";
+      }
+    }, 1000); // 每秒更新一次
   });
 });
