@@ -49,7 +49,7 @@
           <div class="icon_call">
             <a href="tel:400-127-7536"><img src="./images/icon_call.png" alt="" class="img-fluid" /></a>
           </div>
-          <div class="ms-3 icon_call d-block d-md-none" id="MbobileApply">
+          <div class="ms-5 icon_call d-block d-md-none" id="MbobileApply">
             <img src="./images/Q_icon2.png" class="img-fluid" />
           </div>
           <span class="ms-2 d-none d-md-block">400-127-7536</span>
@@ -105,15 +105,15 @@
       style="left: 0; top: 0">
       <div class="pt-xxl-5 pt-xl-4 pt-3 mb-auto text-center w-100">
         <div class="d-flex align-items-end justify-content-center mb-4">
-          <img src="./images/app logo.png" width="24px" class="img-fluid me-2" />
-          <span class="h1 mb-0">弦盾</span>
+          <img src="./images/app logo.png" width="30px" class="img-fluid me-2 mb-1" />
+          <span class="font-40">弦盾</span>
         </div>
         <div>
-          <h4 class="mb-4">促合规·降风险·保发展</h4>
-          <p class="mb-0">推动个人数据应用全过程合规高效流通</p>
+          <h4 class="mb-4 font-24">促合规·降风险·保发展</h4>
+          <p class="mb-0 font-18">推动个人数据应用全过程合规高效流通</p>
         </div>
       </div>
-      <div class="w-100 text-center">
+      <div class="w-100 text-center font-18">
         <p>联合承建：</p>
         <p>北京天天世纪数据技术有限公司</p>
         <p>北京中盾安信科技发展有限公司</p>
@@ -316,11 +316,16 @@
         </div>
       </div>
       <div class="service mb-5">
-        <div class="d-none d-md-block" id="serviceWeb">
+        <div class="d-none d-md-block">
           <div class="d-flex justify-content-between">
             <div class="service-item p-2 border rounded">
               <div class="position-relative">
-                <img src="./images/service_pic001.png" class="img-fluid" />
+                <div class="d-none d-b">
+                  <img src="./images/service_pic001.png" class="img-fluid" />
+                </div>
+                <div>
+                  <img src="./images/serviceM_pic001.png" class="img-fluid" />
+                </div>
                 <div class="service-item-cont">
                   <a href="./solutionsDetails.html" class="text-white">
                     <h3 class="mb-4 font-24">二手车交易</h3>
@@ -367,11 +372,11 @@
             </div>
           </div>
         </div>
-        <div class="d-block d-md-none" id="servicePhone">
+        <!-- <div class="d-block d-md-none" id="servicePhone">
           <div>
             <div class="service-item mb-2">
               <div class="position-relative">
-                <img src="./images/serviceM_pic001.png" class="img-fluid" />
+
                 <div class="service-item-cont d-flex align-items-center px-4 py-2">
                   <div>
                     <a href="./solutionsDetails.html" class="text-dark">
@@ -424,7 +429,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -574,7 +579,7 @@
               </div>
             </div>
           </div>
-          <div class="policyW-item border d-flex flex-column policyW-item-two" >
+          <div class="policyW-item border d-flex flex-column policyW-item-two">
             <div class="">
               <img src="./images/policy_pic003.png" class="img-fluid" />
             </div>
@@ -775,8 +780,8 @@
         </div>
       </div>
       <div class="ft-copyright text-center py-4 font-16 d-flex flex-wrap justify-content-center">
-            <p class="mb-0">  Copyright © 2000；北京天天世纪数据技术有限公司</p>
-            <p class="mb-0">   京ICP备2023015297号</p>
+        <p class="mb-0"> Copyright © 2000；北京天天世纪数据技术有限公司</p>
+        <p class="mb-0"> 京ICP备2023015297号</p>
         </p>
       </div>
     </div>
@@ -792,19 +797,25 @@
           <h3>立刻申请试用并获取最新行业解决方案</h3>
         </div>
         <div class="h5">
-          <div class="trial-item mb-4">
+          <div class="trial-item mb-4 position-relative">
             <div class="trial-item-icon">
               <img src="./images/phone_icon.png" alt="" class="img-fluid" />
             </div>
             <input type="text" placeholder="请输入手机号" class="form-control" />
+            <div class="text-danger position-absolute top-100 start-0 h6 mb-0 px-2">
+              <span>请输入手机号</span>
+            </div>
           </div>
-          <div class="trial-item mb-4">
+          <div class="trial-item mb-4 position-relative">
             <div class="trial-item-icon">
               <img src="./images/user_icon.png" alt="" class="img-fluid" />
             </div>
             <input type="text" placeholder="请输入姓名" class="form-control" />
+            <div class="text-danger position-absolute top-100 start-0 h6 mb-0 px-2">
+              <span>请输入姓名</span>
+            </div>
           </div>
-          <div class="trial-item mb-4">
+          <div class="trial-item mb-4 position-relative">
             <div class="trial-item-icon">
               <img src="./images/frame_icon.png" alt="" class="img-fluid" />
             </div>
@@ -812,14 +823,20 @@
             <div class="text-nowrap trial-item-code flex-shrink-0 w-btn" id="btn-getcode">
               <button class="btn btn-primary h-100 w-100 d-block">获取识别码</button>
             </div>
+            <div class="text-danger position-absolute top-100 start-0 h6 mb-0 px-2">
+              <span>请输入识别码</span>
+            </div>
           </div>
-          <div class="trial-item mb-4">
+          <div class="trial-item mb-4 position-relative">
             <div class="trial-item-icon">
               <img src="./images/protect_icon.png" alt="" class="img-fluid" />
             </div>
             <input type="text" placeholder="请输入验证码" class="form-control me-2" />
             <div class="text-nowrap trial-item-code flex-shrink-0 w-btn d-block">
               <button class="btn h-100 w-100 trial-btn text-white" id="btn-countdown">获取验证码</button>
+            </div>
+            <div class="text-danger position-absolute top-100 start-0 h6 mb-0 px-2">
+              <span>请输入验证码</span>
             </div>
           </div>
           <div class="trial-item mb-4 h5">
