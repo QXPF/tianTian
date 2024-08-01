@@ -5,7 +5,7 @@ $(function () {
   });
   $(".scene-item").click(function () {
     if ($(this).hasClass("active")) {
-      return
+      return;
     }
     $(this).addClass("active").siblings().removeClass("active");
     const index = $(this).index();
@@ -128,5 +128,23 @@ $(function () {
       $("#servicePhone").html(servicePhoneHtml);
       return;
     }
+  });
+  $("#applyBtn").click(function () {
+    $("#trialForm").show();
+  });
+  $(".pop .pop-close").click(function () {
+    $(".pop").hide();
+  });
+  $("#btn-apply").click(function () {
+    $(".pop").hide();
+    $("#popSuccess").show();
+  });
+  $("#btn-code").click(function () {
+    $(".pop").hide();
+    $("#popError").show();
+  });
+  $("#MbobileApply").click(function () {
+    $(".pop").hide();
+    $("#trialForm").show();
   });
 });
