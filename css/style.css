@@ -1055,6 +1055,9 @@ html {
     border-right: var(--bs-border-width) var(--bs-border-style)
       var(--bs-border-color) !important;
   }
+  .mb-xxl-6{
+    margin-bottom: 6rem;
+ }
 }
 @media (min-width: 768px) {
   .mb-md-6{
