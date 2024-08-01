@@ -208,6 +208,7 @@ html {
     z-index: 9999;
   }
   .hd-nav {
+    padding: 60px 0 20px;
     display: block
   }
   .icon_call {
@@ -877,7 +878,7 @@ html {
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
-  z-index: 999;
+  z-index: 99999;
 }
 .pop .pop-wrap {
   position: absolute;
