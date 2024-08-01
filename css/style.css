@@ -78,8 +78,6 @@ html {
 .text-blue {
   color: rgba(29, 81, 210, 1) !important;
 }
-.btn-black {
-}
 /* 行高 */
 .line-height-15 {
   line-height: 1.5;
@@ -197,7 +195,7 @@ html {
     color: #fff;
   }
   .icon_call {
-    max-width: 20px;
+    max-width: 26px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -211,6 +209,9 @@ html {
   }
   .hd-nav {
     display: block
+  }
+  .icon_call {
+    max-width: 21px;
   }
   .container {
     padding: 0 10px;
@@ -240,21 +241,21 @@ html {
     display: block;
     position: absolute;
     right: 10px;
-    top: 12px;
+    top: 15px;
   }
   .header .hd-fr {
-    margin-right: 30px;
+    margin-right: 25px;
   }
 }
 
 .hamburger {
   list-style: none; /* summary元素默认会有一个三角形箭头，可以使用这个行代码删除箭头 */
   cursor: pointer;
-  width: 26px;
-  height: 26px;
+  width: 20px;
+  height: 20px;
   position: relative;
   background: url(../images/list_icon.png) no-repeat center;
-  background-size:100%; 
+  background-size:100% 100% !important; 
 }
 .hamburger.hamburger-open {
   background: url(../images/cross.png) no-repeat center;
@@ -460,7 +461,9 @@ html {
     font-size: 12px;
   }
 }
-
+#serviceWeb .service-item-two{
+  margin:  0 5%;
+}
 .service .service-item:hover {
   box-shadow: 0px 11px 24px 4px rgba(0, 0, 0, 0.34);
   /* border-radius: 10px 10px 10px 10px; */
@@ -1007,13 +1010,13 @@ html {
     font-size: 26px !important;
   }
   .font-36 {
-    font-size: 20px !important;
-  }
-  .font-32 {
     font-size: 19px !important;
   }
-  .font-30 {
+  .font-32 {
     font-size: 18px !important;
+  }
+  .font-30 {
+    font-size: 17px !important;
   }
   .font-28 {
     font-size: 16px !important;
@@ -1056,6 +1059,13 @@ html {
   .border-md-end {
     border-right: var(--bs-border-width) var(--bs-border-style)
       var(--bs-border-color) !important;
+  }
+  .border-md{
+    border: var(--bs-border-width) var(--bs-border-style)
+    var(--bs-border-color) !important;
+  }
+  .border-md-0{
+    border: none !important;
   }
 }
 @media (min-width: 992px) {
