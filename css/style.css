@@ -486,6 +486,9 @@ html {
   border-radius: 10px;
   overflow: hidden;
 }
+.policy .policyW-item.policy-item-two {
+  margin: 0 5%;
+}
 @media screen and (max-width: 1440px) {
   .policy .policyW-item {
     width: 30%;
