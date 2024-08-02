@@ -218,9 +218,10 @@ html {
     padding: 0 10px;
   }
   .hd-nav {
-    position: absolute;
+    position: fixed;
     top: 50px;
     left: 0;
+    bottom: 0;
     width: 100%;
     display: none;
     background: #fff;
@@ -494,7 +495,7 @@ html {
     border-radius: 5px;
   }
   .service .service-item-cont p {
-    line-height:2
+    line-height: 2;
   }
 }
 
@@ -831,6 +832,9 @@ html {
   .compliance_icon {
     width: 40px;
   }
+  .compliance-cont{
+    width: 100%;
+  }
 }
 .pagination .page-item .page-link {
   background: rgba(191, 191, 191, 1);
@@ -1128,6 +1132,12 @@ html {
   .border-md-0 {
     border: none !important;
   }
+  .text-indent-md-2 {
+    text-indent: 2rem;
+  }
+  .border-md-bottom-0 {
+    border-bottom: none !important;
+  }
 }
 @media (min-width: 992px) {
   .border-lg-end {
@@ -1147,4 +1157,11 @@ html {
   top: 100%;
   padding: 0 1rem;
   color: #ff0022;
+}
+@media screen and (max-width: 768px) {
+  .text-md-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 }
