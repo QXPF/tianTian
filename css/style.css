@@ -671,7 +671,15 @@ html {
 }
 .empower-step-item {
   width: 120px;
+  position: relative;
   padding: 0 5px;
+}
+.empower-step-item .empower-step-item-text{
+  position: absolute;
+  /* width: 200px; */
+  left: 50%;
+  transform: translate(-50%,0);
+  bottom: 0;
 }
 .empower-step-item-line {
   width: 90px;
@@ -686,12 +694,20 @@ html {
   background: rgba(38, 129, 255, 1);
 }
 @media screen and (max-width: 1440px) {
+  .empower-step-item {
+    width: 100px;
+  }
   .empower-step-item-line {
+    height: 90px;
     background-size: 20px;
   }
 }
 @media screen and (max-width: 1200px) {
+  .empower-step-item {
+    width: 90px;
+  }
   .empower-step-item-line {
+    height: 80px;
     background-size: 16px;
   }
 }
@@ -1083,4 +1099,14 @@ html {
 }
 .bg-deep{
   background: rgba(134, 170, 248, 1)!important;
+}
+.form-validate label.error{
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  padding: 0 1rem;
+  color: #ff0022;
 }

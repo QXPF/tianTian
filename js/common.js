@@ -130,22 +130,22 @@ $(function () {
     }
   });
   $("#applyBtn").click(function () {
-    $("#trialForm").show();
+    $("#popTrial").show();
   });
   $(".pop .pop-close").click(function () {
     $(".pop").hide();
   });
-  $("#btn-apply").click(function () {
-    $(".pop").hide();
-    $("#popSuccess").show();
-  });
+  // $("#btn-apply").click(function () {
+  //   $(".pop").hide();
+  //   $("#popSuccess").show();
+  // });
   $("#btn-getcode").click(function () {
     $(".pop").hide();
     $("#popError").show();
   });
   $("#MbobileApply").click(function () {
     $(".pop").hide();
-    $("#trialForm").show();
+    $("#popTrial").show();
   });
   let countdown; // 倒计时计时器变量
   $("#btn-countdown").click(function () {
