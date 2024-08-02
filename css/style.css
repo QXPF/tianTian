@@ -482,7 +482,15 @@ html {
     line-height: 2;
   }
 }
+@media (min-width: 992px) {
+  .service .service-item-cont {
+    padding: 15% !important;
+  }
+}
 @media (min-width: 768px) {
+  .service .service-item-cont {
+    padding: 10% !important;
+  }
   .serviceWeb .service-item-two {
     margin: 0 5%;
   }
