@@ -102,7 +102,7 @@ $("#formTrial").validate({
   rules: {
     phone: {
       required: true,
-      phoneUS: /^(?:(?:\+|00)86)?1[3-9]\d{9}$/,
+      phoneUS: true,
     },
     userName: {
       required: true,
@@ -131,6 +131,6 @@ $("#formTrial").validate({
     },
   },
   submitHandler: function (form) {
-   $('#popSuccess').show()
+    $("#popSuccess").show();
   },
 });

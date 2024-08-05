@@ -89,8 +89,8 @@
               <input type="text" placeholder="请输入姓名" name="userName" class="form-control form-control-lg">
             </div>
             <div class="mb-4 text-16 position-relative">
-              <label class="form-label ">联系电话*</label>
-              <input type="text" placeholder="请输入联系电话" name="phone" class="form-control form-control-lg">
+              <label class="form-label">联系电话*</label>
+              <input type="text" placeholder="请输入联系电话" name="phone" maxlength="11" class="form-control form-control-lg">
             </div>
             <div class="mb-4 text-16 position-relative">
               <label class="form-label ">企业名称*</label>
@@ -265,6 +265,7 @@
         },
         phone: {
           required: true,
+          phoneUS: true,
         },
         enterpriseName: {
           required: true,
@@ -282,6 +283,7 @@
         },
         phone: {
           required: '请输入电话',
+          phoneUS: "请输入正确手机号",
         },
         enterpriseName: {
           required: '请输入企业名称',
