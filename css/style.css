@@ -1173,3 +1173,7 @@ html {
     white-space: nowrap;
   }
 }
+.hover-primary:hover p, .hover-primary:hover h3{
+  color: rgba(38, 129, 255, 1) !important;
+
+}
