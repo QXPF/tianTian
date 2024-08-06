@@ -456,7 +456,12 @@ html {
     width: 32px;
   }
 }
-
+@media screen and (max-width: 578px) {
+  .product_icon001 {
+    flex-shrink: 0 !important ;
+    width: 30px !important;
+  }
+}
 .service .service-item:hover {
   box-shadow: 0px 11px 24px 4px rgba(0, 0, 0, 0.34);
   /* border-radius: 10px 10px 10px 10px; */
@@ -1103,6 +1108,35 @@ html {
   }
   .font-18 {
     font-size: 13px !important;
+  }
+  .font-16 {
+    font-size: 12px !important;
+  }
+}
+@media screen and (max-width: 578px) {
+  .font-40 {
+    font-size: 24px !important;
+  }
+  .font-36 {
+    font-size: 18px !important;
+  }
+  .font-32 {
+    font-size: 16px !important;
+  }
+  .font-30 {
+    font-size: 15px !important;
+  }
+  .font-28 {
+    font-size: 14px !important;
+  }
+  .font-24 {
+    font-size: 13px !important;
+  }
+  .font-20 {
+    font-size: 12px !important;
+  }
+  .font-18 {
+    font-size: 12px !important;
   }
   .font-16 {
     font-size: 12px !important;
